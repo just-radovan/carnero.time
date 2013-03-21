@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="text_prefs">#FF767676</color>
+	<color name="text_prefs_sub">#FFAAAAAA</color>
+	<color name="bcg_prefs" >#FFE5E5E5</color>
+</resources>

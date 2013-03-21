@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="name">Životní čas</string>
+	<string name="description">Zobrazuje čas zbývající do konce dnešního dne.</string>
+
+	<string name="content_expanded_free">zbývá do konce dne</string>
+	<string name="content_expanded_planed">zbývá %1$s volného času</string>
+
+	<string name="prefs_title">Nastavení Životního času</string>
+	<string name="prefs_end_label">Konec dne</string>
+	<string name="prefs_time_separator">:</string>
+</resources>

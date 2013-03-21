@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="name">Time of my Life</string>
+	<string name="description">Displays time remaining in current day.</string>
+
+	<string name="content_expanded_free">remaining in this day</string>
+	<string name="content_expanded_planed">%1$s of free time remaining</string>
+
+	<string name="prefs_title">Time of my Life Settings</string>
+	<string name="prefs_end_label">End of the day</string>
+	<string name="prefs_time_separator">:</string>
+</resources>

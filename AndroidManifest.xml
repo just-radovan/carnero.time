@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="carnero.time"
+	android:versionCode="1"
+	android:versionName="0.01.0">
+
+	<uses-sdk
+		android:minSdkVersion="17"
+		android:targetSdkVersion="17"/>
+
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+
+	<application
+		android:icon="@drawable/icon"
+		android:label="@string/name"
+		android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+
+		<activity android:name="carnero.time.Prefs"
+			android:icon="@drawable/ic_time"
+			android:label="@string/prefs_title"
+			android:exported="true" />
+
+		<service
+			android:name="carnero.time.Extension"
+			android:icon="@drawable/ic_time"
+			android:label="@string/name"
+			android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+
+			<intent-filter>
+				<action android:name="com.google.android.apps.dashclock.Extension"/>
+			</intent-filter>
+
+			<meta-data
+				android:name="protocolVersion"
+				android:value="1"/>
+			<meta-data
+				android:name="description"
+				android:value="@string/description"/>
+			<meta-data
+				android:name="settingsActivity"
+				android:value="carnero.time.Prefs" />
+		</service>
+	</application>
+</manifest>
