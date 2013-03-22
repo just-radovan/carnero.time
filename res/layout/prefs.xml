@@ -38,6 +38,7 @@
 					android:layout_height="wrap_content"
 					android:gravity="center"
 					android:singleLine="true"
+					android:maxLength="2"
 					android:inputType="number"
 					android:textSize="32sp"
 					android:textColor="@color/text_prefs" />
@@ -59,6 +60,7 @@
 					android:layout_height="wrap_content"
 					android:gravity="center"
 					android:singleLine="true"
+					android:maxLength="2"
 					android:inputType="number"
 					android:textSize="32sp"
 					android:textColor="@color/text_prefs" />

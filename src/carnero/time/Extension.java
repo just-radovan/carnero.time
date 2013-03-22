@@ -25,9 +25,15 @@ public class Extension extends DashClockExtension {
 		int endHrs = Common.getHours(mPrefs);
 		int endMins = Common.getMinutes(mPrefs);
 
+		// 23:11 > 23:13
+		// hrs = 23 - 23 = 0
+		// mins = (60 + 13) - 11 = 62
+
 		int hrs = endHrs - now.get(Calendar.HOUR_OF_DAY);
 		int mins = (60 + endMins) - now.get(Calendar.MINUTE);
-		if (mins > 0 && mins < 60)  {
+		if (mins >= 60) {
+			mins -= 60;
+		} else {
 			hrs --;
 		}
 		if (hrs < 0) {
